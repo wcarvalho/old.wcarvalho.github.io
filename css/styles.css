@@ -1,4 +1,4 @@
-@import url("css/styles.css");
+@import url("materialize.css");
 
 body, html
 {
@@ -43,28 +43,40 @@ body, html
 
 .nav {
     padding-top: 0;
-    margin-top: 0;
+    /*margin-top: 0;*/
     border-top: 0;
+    margin: auto;
+    /*margin-right: auto;*/
 }
 
 .myself .card
 {
+    background-image: url('../img/BRAIN.png');
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+
     padding-top: 2.5%;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 2.5%;
 }
 
+.myself .summary{
+    padding-left: 5%; 
+}
+
 .myself p
 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     float: right;
-    width: 80%;
+    width: 75%;
 }
 .myself .me_nsf
 {
     float: left;
-    width: 15%;
+    width: 20%;
     margin-top: auto;
     padding-top: auto;
     padding-bottom: auto;

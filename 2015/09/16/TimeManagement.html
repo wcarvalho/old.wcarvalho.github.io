@@ -1,0 +1,26 @@
+<p>This will be a post about Time Management.</p>
+
+<h2 id="installation-instructions">Installation Instructions</h2>
+
+<p>Once you have cloned the master directory from git, you can begin the process of building this library via
+<code>
+cd dircobjects
+autoreconf --force --install
+</code>
+You can configure with <code>./configure</code>. You can set the prefix as you normally would for a library installed with pkg-config. This simply requires that you set your prefix to a prefix recognized by pkg-config. One can do so as follows
+<code>
+./configure --prefix=$PKG_CONFIG_PATH
+</code>
+You can then build and install via
+<code>
+make
+make install
+</code>
+To force a fresh release after an earlier checkout do
+<code>
+make distclean
+git pull
+./configure
+make
+make install
+</code></p>
