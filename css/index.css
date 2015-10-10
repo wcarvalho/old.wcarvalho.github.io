@@ -1,0 +1,62 @@
+.myself .card
+{
+    background-image: url('../img/BRAIN.png');
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+
+    padding-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2.5%;
+}
+
+.myself .summary{
+    padding-left: 5%; 
+}
+
+.myself p
+{
+    font-size: 1.4rem;
+    float: right;
+    width: 75%;
+}
+.myself .me_nsf
+{
+    float: left;
+    width: 20%;
+    margin-top: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-bottom: auto;
+}
+
+.about .col
+{
+    margin-bottom: 24px;
+}
+
+.about .card
+{
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 1.2rem;
+
+}
+
+.about p {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.about .card-action
+{
+    text-align: center;
+}
+
+.about a:hover {
+    font-weight: 900;
+
+}
