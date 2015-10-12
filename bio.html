@@ -51,7 +51,6 @@
 <div class="col s12 m4 l4">
 <div class="default card">
 
-
 Coming soon...
 
 
@@ -107,29 +106,14 @@ Coming soon...
 <script type="text/javascript" src="js/materialize.js"></script>
 <script type="text/javascript">
   
-  // $(document).ready(function(){
-  //   $("#header").load("_includes/header.html");
-  //   $("#menu").load("_includes/menu.html");
-  //   $("#footer").load("_includes/footer.html");
-  // });
-  // function load_home(){
   var loc = window.location.pathname;
   var dir = loc.substring(0, loc.lastIndexOf('/'));
   console.log("path =" + dir);
-  load_div("header");
-  load_div("menu");
-  load_div("footer");
+
   $(".button-collapse").sideNav();
   $(document).ready(function(){
     $('.collapsible').collapsible({ accordion : true });
   });
-  function load_div(file){
-    path = "_includes/" + file + ".html";
-    html = '<object type="text/html" data="'+ path +'" ></object>'
-    $("<iframe/>").attr("src", path).appendTo("#" + file); 
-    // document.getElementById(file).innerHTML=html;
-    // console.log("loaded"+ file)
-  }
 </script>
 </body>
 </html>

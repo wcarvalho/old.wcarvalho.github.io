@@ -74,24 +74,31 @@
     
       <li>
         <div class="header collapsible-header center">
-          <b>All other posts</b>
+          <a href="/2015/01/11/test.html">Test</a>
         </div>
         <div class="body collapsible-body">
-          <ol>
-            
-            <li>
-              <a href="/2015/09/16/undergraduate-summer-research.html">Summer Research as an Undergraduate</a>
-            </li>
-            
-            <li>
-              <a href="/2015/09/16/TimeManagement.html">Time Management System</a>
-            </li>
-            
-          </ol>
+            <h1 id="header">Header</h1>
+
+
         </div>
       </li>
-</ul>
+    
 
+
+</ul>
+</br>
+<ul class="collapsible" data-collapsible="accordian">
+<li>
+<div class="header collapsible-header center">
+  <b>All other posts</b>
+</div>
+<div class="body collapsible-body">
+  <ol>
+    
+  </ol>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -146,29 +153,14 @@
 <script type="text/javascript" src="js/materialize.js"></script>
 <script type="text/javascript">
   
-  // $(document).ready(function(){
-  //   $("#header").load("_includes/header.html");
-  //   $("#menu").load("_includes/menu.html");
-  //   $("#footer").load("_includes/footer.html");
-  // });
-  // function load_home(){
   var loc = window.location.pathname;
   var dir = loc.substring(0, loc.lastIndexOf('/'));
   console.log("path =" + dir);
-  load_div("header");
-  load_div("menu");
-  load_div("footer");
+
   $(".button-collapse").sideNav();
   $(document).ready(function(){
     $('.collapsible').collapsible({ accordion : true });
   });
-  function load_div(file){
-    path = "_includes/" + file + ".html";
-    html = '<object type="text/html" data="'+ path +'" ></object>'
-    $("<iframe/>").attr("src", path).appendTo("#" + file); 
-    // document.getElementById(file).innerHTML=html;
-    // console.log("loaded"+ file)
-  }
 </script>
 </body>
 </html>
