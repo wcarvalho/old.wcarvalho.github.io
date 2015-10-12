@@ -9,7 +9,7 @@ body, html
 {
     text-align: center;
     padding-top: 3%;
-    padding-bottom: 0%;
+    padding-bottom: 1%;
     margin-bottom: 0;
 }
 
@@ -43,65 +43,24 @@ body, html
 
 .nav {
     padding-top: 0;
-    /*margin-top: 0;*/
     border-top: 0;
     margin: auto;
-    /*margin-right: auto;*/
 }
 
-
-/*
-.research_interests .col
+.container
 {
-    margin-bottom: 24px;
+    padding-top: 2%;
+    font-size: 1.3rem;
 }
 
-.research_interests .card
+.default
 {
-    text-align: left;
-    padding-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
-    font-size: 1.2rem;
-
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.research_interests p {
-    font-weight: 400;
-    font-size: 1.2rem;
-}
-
-.research_interests .card-action
-{
-    text-align: center;
-}
-
-.advice .col
-{
-    margin-bottom: 24px;
-}
-
-.advice .card
-{
-    text-align: left;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 1.2rem;
-
-}
-
-.advice p {
-    font-weight: 400;
-    font-size: 1.2rem;
-}
-
-.advice .card-action
-{
-    text-align: center;
-}
-
-*/
 .page-footer {
     background-color: #EDEDED !important;
 }
@@ -109,9 +68,8 @@ body, html
 .footer {
     padding-top: 2%;
     padding-bottom: 1%;
-    padding-left: 4%;
+    padding-left: 2%;
     padding-right: 2%;
-    color: white;
 }
 
 .footer img{

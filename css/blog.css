@@ -1,0 +1,28 @@
+.container .card
+{
+    padding-top: 2.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2.5%;
+}
+
+.container .header
+{
+    font-size: 1.4rem;
+}
+
+.container .body
+{
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    font-size: 1.3rem;
+    padding-top: 2.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2.5%;
+}
+
+.container h4
+{
+  text-align: center;
+  padding-bottom: 3%;
+}
