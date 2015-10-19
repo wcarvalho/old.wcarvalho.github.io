@@ -74,8 +74,8 @@ body, html
 
 .footer img{
     float: top;
-    width: 96px;
-    height: 96px;
+    width: 20%;
+    height: 20%;
 }
 
 .footer a{
