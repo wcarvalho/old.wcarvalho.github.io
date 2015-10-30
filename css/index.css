@@ -51,6 +51,52 @@
 {
     font-size: 1.5rem;
 }
+
+.container #blog_title
+{
+    text-align: center;
+}
+.container .header
+{
+    font-size: 1.4rem;
+}
+@media (min-width: 801px) {
+    .container .header a
+    {
+        width: 70%;
+        margin: auto;
+    }
+}
+@media (min-width: 1200px) {
+    .container .header a
+    {
+        width: 50%;
+        margin: auto;
+    }
+}
+@media (max-width: 800px) {
+    .container .header
+    {
+        height: 8%;
+    }
+    .container .header a
+    {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+.container .body
+{
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    font-size: 1.3rem;
+    padding-top: 2.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2.5%;
+}
+
 /*.myself .summary{
     padding-left: 5%; 
 }*/

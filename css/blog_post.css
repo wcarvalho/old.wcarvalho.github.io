@@ -1,0 +1,15 @@
+/*Will have the make the line below custom by screen width*/
+
+.reference {
+    width: 60%;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reference .header{
+    padding-top: 3%;
+    height: 7%;
+    font-weight: bold;
+    line-height: 150%;
+}
