@@ -18,7 +18,7 @@
   </h1>
   <h5 class="grey lighten-4 grey-text text-darken-1">
   Aspiring
-  <span class="red-text text-accent-4"> Theoretical Neuroscientist</span>
+  <span class="red-text text-accent-4"> Brain Scientist</span>
   and
   <span class="indigo-text text-accent-4">Software Engineer</span>
   </h5>
@@ -106,13 +106,22 @@
     
       <li>
         <div class="title collapsible-header active center">
+          <a href="/2016/01/02/TimeManagement.html">A Prescription for Time Management</a>
+        </div>
+        <div class="description collapsible-body">
+            A guide to my structured, yet flexible, time and task management system. I also provide a script that populates a spreadsheet with data from one's google calendar. Recommended for people like myself with a scattered mind.
+        </div>
+      </li>
+    
+    
+      <li>
+        <div class="title collapsible-header center">
           <a href="/2015/11/16/machine_learning_and_brain_knowledge.html">Knowledge of the Brain Informing Machine Learning and Vice-Versa</a>
         </div>
         <div class="description collapsible-body">
             I share interesting material (papers, articles, etc.) I came across related to how brain research is complimenting machine learning research and vice-versa.
         </div>
       </li>
-    
     
 </ul>
 
@@ -175,12 +184,16 @@
   
   var loc = window.location.pathname;
   var dir = loc.substring(0, loc.lastIndexOf('/'));
-  console.log("path =" + dir);
+
 
   $(".button-collapse").sideNav();
   $(document).ready(function(){
     $('.collapsible').collapsible({ accordion : true });
   });
+   $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+        
 </script>
 </body>
 </html>

@@ -18,7 +18,7 @@
   </h1>
   <h5 class="grey lighten-4 grey-text text-darken-1">
   Aspiring
-  <span class="red-text text-accent-4"> Theoretical Neuroscientist</span>
+  <span class="red-text text-accent-4"> Brain Scientist</span>
   and
   <span class="indigo-text text-accent-4">Software Engineer</span>
   </h5>
@@ -213,12 +213,16 @@ s.setAttribute('data-timestamp', +new Date());
   
   var loc = window.location.pathname;
   var dir = loc.substring(0, loc.lastIndexOf('/'));
-  console.log("path =" + dir);
+
 
   $(".button-collapse").sideNav();
   $(document).ready(function(){
     $('.collapsible').collapsible({ accordion : true });
   });
+   $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+        
 </script>
 </body>
 </html>

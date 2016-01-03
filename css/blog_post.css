@@ -13,3 +13,14 @@
     font-weight: bold;
     line-height: 150%;
 }
+
+.regular{
+    text-align: center;
+}
+.regular img{
+    width: 80%;
+}
+
+.materialboxed .initialized .active {
+    width: 150%;
+}
