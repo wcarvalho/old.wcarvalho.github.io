@@ -21,6 +21,6 @@ img.regular{
     margin-right: auto;
 }
 
-.materialboxed .initialized .active {
+img.regular.materialboxed.responsive-img.initialized.active {
     max-height: 1500px;
 }
