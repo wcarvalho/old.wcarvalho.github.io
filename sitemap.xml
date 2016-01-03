@@ -3,7 +3,7 @@
   
     
     <url>
-      <loc>/2016/01/02/TimeManagement.html</loc>
+      <loc>https://wcarvalho.github.io//2016/01/02/TimeManagement.html</loc>
       
         <lastmod>2016-01-02T00:00:00-08:00</lastmod>
       
@@ -18,7 +18,7 @@
   
     
     <url>
-      <loc>/2015/11/16/machine_learning_and_brain_knowledge.html</loc>
+      <loc>https://wcarvalho.github.io//2015/11/16/machine_learning_and_brain_knowledge.html</loc>
       
         <lastmod>2015-11-16T00:00:00-08:00</lastmod>
       
@@ -35,47 +35,9 @@
     
       
       <url>
-        <loc>/bio.html</loc>
+        <loc>https://wcarvalho.github.io//bio.html</loc>
         
-          <lastmod>2016-01-03T15:04:08-08:00</lastmod>
-        
-        
-          <changefreq>monthly</changefreq>
-        
-        
-          <priority>0.3</priority>
-        
-      </url>
-      
-    
-  
-    
-      
-      <url>
-        <loc>/blog.html</loc>
-        
-          <lastmod>2016-01-03T15:04:08-08:00</lastmod>
-        
-        
-          <changefreq>monthly</changefreq>
-        
-        
-          <priority>0.3</priority>
-        
-      </url>
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      <url>
-        <loc>/index_old.html</loc>
-        
-          <lastmod>2016-01-03T15:04:08-08:00</lastmod>
+          <lastmod>2016-01-03T15:05:49-08:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -90,9 +52,47 @@
     
       
       <url>
-        <loc>/reference_material.html</loc>
+        <loc>https://wcarvalho.github.io//blog.html</loc>
         
-          <lastmod>2016-01-03T15:04:08-08:00</lastmod>
+          <lastmod>2016-01-03T15:05:49-08:00</lastmod>
+        
+        
+          <changefreq>monthly</changefreq>
+        
+        
+          <priority>0.3</priority>
+        
+      </url>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      <url>
+        <loc>https://wcarvalho.github.io//index_old.html</loc>
+        
+          <lastmod>2016-01-03T15:05:49-08:00</lastmod>
+        
+        
+          <changefreq>monthly</changefreq>
+        
+        
+          <priority>0.3</priority>
+        
+      </url>
+      
+    
+  
+    
+      
+      <url>
+        <loc>https://wcarvalho.github.io//reference_material.html</loc>
+        
+          <lastmod>2016-01-03T15:05:49-08:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
