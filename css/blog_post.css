@@ -14,11 +14,11 @@
     line-height: 150%;
 }
 
-.regular{
-    text-align: center;
-}
-.regular{
-    max-height: 500px;
+
+img.regular{
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .materialboxed .initialized .active {
