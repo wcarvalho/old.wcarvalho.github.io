@@ -210,6 +210,15 @@ It is really a matter of preference. I use a combination of different levels. </
 
 <p>Once you have downloaded the file, you can <a href="https://docs.google.com/spreadsheets/u/0/">upload it</a> into Google Sheets.</p>
 
+<p>Download <a href="/files/time_management/time_tracker.js">this script</a> (right-click and select “Save Link As”).</p>
+
+<p>In your google sheet, select</p>
+
+<pre><code>    Tools -&gt; Script Editor...
+</code></pre>
+
+<p>Replace the contents of the script that opens with the contents of the script in the file above. Save and the features are ready to use.</p>
+
 <p>Place your super-categories vertically starting at B8 and your sub-categories horizantally starting at B2.</p>
 
 <p>To the left of your super-categories, you can put the color you intend for the row. This field accepts written colors and hexadecimal colors.</p>
@@ -219,6 +228,33 @@ It is really a matter of preference. I use a combination of different levels. </
 <p><img class="regular materialboxed responsive-img" src="/files/time_management/spreadsheet_initial_fill.png" /></p>
 
 <p>In the above example, time delegation for sub-categories “570,” “561,” “ml,” and “apps” would only be tracked using sub-calendars “Work,” “Assignable,” and “Personal.”</p>
+
+<p>Now that you’ve filled in the spreadsheet, I will quickly cover how to use the script. Your spreadsheet should now have a “Time Tracker” menu for the features described in this menu. Below I describe each.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fill Sub Category Times</td>
+      <td>Fill in B3 onwards with the times for events in the sub-categories above</td>
+    </tr>
+    <tr>
+      <td>Fill Super Category Times</td>
+      <td>Fill in C8 onwards with the time assigned to their corresponding sub-calendars</td>
+    </tr>
+    <tr>
+      <td>Fill Colors</td>
+      <td>Color in the sub-calendar rows according to the colors written in A8 onwards</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
 
 <h5 id="setting-up-your-calendar-base">Setting Up Your Calendar Base</h5>
 
