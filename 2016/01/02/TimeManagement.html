@@ -75,7 +75,7 @@ January 02, 2016 by <a rel="author" href="https://plus.google.com/u/0/+WilkaCarv
   <li>Track your time using the Time Tracker menu which should appear as soon as you save the script.</li>
 </ol>
 
-<p>In the above below, time delegation for sub-categories “570,” “561,” “ml,” and “apps” would only be tracked using sub-calendars “Work,” “Extra,” and “Personal.”</p>
+<p>In the above below, time delegation for categories “570,” “561,” “ml,” and “apps” would only be tracked using calendars “Work,” “Extra,” and “Personal.”</p>
 
 <table>
   <tr>
@@ -159,17 +159,17 @@ January 02, 2016 by <a rel="author" href="https://plus.google.com/u/0/+WilkaCarv
 <p>For the calendar and spreadsheet applications, I recommend using Google’s (<a href="https://www.google.com/calendar/about/">Google Calendar</a>, <a href="https://www.google.com/sheets/about/">Google Sheets</a>) because you can interface with them via <a href="https://developers.google.com/apps-script/?hl=en">Apps Scripts</a>. (App Scripts are JavaScript scripts which can access information in your google applications). Additionally, Google Calendar is stored online and is thus accessible from any platform. To organize your tasks, you will need something to list them – paper should be fine. </p>
 
 <p>In order to track my time delegation to tasks in different categories, I <br />
-(1) create sub-calendars based on super-categories and <br />
-(2) implant sub-category membership information into event names. <br />
-For example, I delegate time for research using my “Work” sub-calendar. Labels for time working on my project modeling a DIRC particle detector always contained “dirc”. (This consistent naming is especially important in having an App Script automatically populate a spreadsheet with your time delegation).</p>
+(1) use multiple calendars and <br />
+(2) implant category membership information into event names. <br />
+For example, I delegate time for research using my “Work” calendar. Labels for time working on my project modeling a DIRC particle detector always contained “dirc”. (This consistent naming is especially important in having an App Script automatically populate a spreadsheet with your time delegation).</p>
 
-<p>Below, I describe the super-categories and sub-categories I use.</p>
+<p>Below, I describe the calendars and categories I use.</p>
 
-<h5 id="super-categoriessub-calendars">Super-Categories/Sub-Calendars</h5>
+<h5 id="calendars">Calendars</h5>
 
-<p>I create super-categories based on the type of tasks/duties I expect to have. For example, I know that I will have some responsibilities which will require a consistent block of time every week so I have a “Fixed” super-category; I know that outside of my schoolwork and research, I enjoy pursuing side-projects so I have a “Personal” super-category. </p>
+<p>I create calendars based on the type of tasks/duties I expect to have. For example, I know that I will have some responsibilities which will require a consistent block of time every week so I have a “Fixed” super-category; I know that outside of my schoolwork and research, I enjoy pursuing side-projects so I have a “Personal” super-category. </p>
 
-<p>You can find a full list of my current super-categories below. Please do not restrict yourself to these. Take a moment to reflect and create super-categories which you feel describe how you delienate your tasks. While you can always update them in the future, a list which accurately reflects your task delienation will ease task delegation. </p>
+<p>You can find a full list of my current calendars below. Please do not restrict yourself to these. Take a moment to reflect and create calendars which you feel describe how you delienate your tasks. While you can always update them in the future, a list which accurately reflects your task delienation will ease task delegation. </p>
 
 <table>
   <thead>
@@ -223,29 +223,29 @@ For example, I delegate time for research using my “Work” sub-calendar. Labe
   </tbody>
 </table>
 
-<p>(In theory, you can place all of your events into one sub-calendar, but with many calendars, your events will be color coordinated, which is very useful for quickly parsing them.)</p>
+<p>(In theory, you can place all of your events into one calendar, but with many calendars, your events will be color coordinated, which is very useful for quickly parsing them.)</p>
 
 <hr />
 <p><br /></p>
 
-<h5 id="sub-categories">Sub-Categories</h5>
+<h5 id="categories">Categories</h5>
 
-<p>Your sub-category labels will correspond to your current tasks/duties, but the level of categorization to which they correspond can vary. For example, if you are completing graduate school and fellowship applications, you can have <br />
+<p>Your category labels will correspond to your current tasks/duties, but the level of categorization to which they correspond can vary. For example, if you are completing graduate school and fellowship applications, you can have <br />
 (1) <strong>broad</strong>: “applications” <br />
 (2) <strong>more specific</strong>: “grad” and “fellowship”<br />
 (3) <strong>even more specific</strong>: “columbia”, “carnegie”, “fulbright”.<br />
 It is really a matter of preference. I use a combination of different levels. </p>
 
-<p>For whatever level you choose, consider opting for shorter labels since you will have to write this label in the event title of every event that corresponds to this sub-category.</p>
+<p>For whatever level you choose, consider opting for shorter labels since you will have to write this label in the event title of every event that corresponds to this category.</p>
 
-<p>Your sub-category choices are more amenable than your super-category choices. While your super-category choices may remain for months, you may add/remove sub-categories on a weekly basis. </p>
+<p>Your category choices are more amenable than your super-category choices. While your super-category choices may remain for months, you may add/remove categories on a weekly basis. </p>
 
-<p>Below are sub-categories I am currently using.</p>
+<p>Below are categories I am currently using.</p>
 
 <table>
   <thead>
     <tr>
-      <th>Sub-Category</th>
+      <th>category</th>
       <th>Significance</th>
     </tr>
   </thead>
@@ -293,15 +293,15 @@ It is really a matter of preference. I use a combination of different levels. </
 
 <p>Replace the contents of the script that opens with the contents of the script in the file above. Save and the features are ready to use.</p>
 
-<p>Place your super-categories vertically starting at B8 and your sub-categories horizantally starting at B2.</p>
+<p>Place your calendars vertically starting at B8 and your categories horizantally starting at B2.</p>
 
-<p>To the left of your super-categories, you can put the color you intend for the row. This field accepts written colors and hexadecimal colors.</p>
+<p>To the left of your calendars, you can put the color you intend for the row. This field accepts written colors and hexadecimal colors.</p>
 
-<p>The time for sub-categories is only populated using sub-calendars that have text written in their corresponding color cell. Writing anything satisfies this requirement. You can think of these super-categories as being “active”.</p>
+<p>The time for categories is only populated using calendars that have text written in their corresponding color cell. Writing anything satisfies this requirement. You can think of these calendars as being “active”.</p>
 
 <p><img class="regular materialboxed responsive-img" src="/files/time_management/spreadsheet_initial_fill.png" /></p>
 
-<p>In the above example, time delegation for sub-categories “570,” “561,” “ml,” and “apps” would only be tracked using sub-calendars “Work,” “Extra,” and “Personal.”</p>
+<p>In the above example, time delegation for categories “570,” “561,” “ml,” and “apps” would only be tracked using calendars “Work,” “Extra,” and “Personal.”</p>
 
 <p>Now that you’ve filled in the spreadsheet, I will quickly cover how to use the script. Your spreadsheet should now have a “Time Tracker” menu. Below I describe each option.</p>
 
@@ -315,15 +315,15 @@ It is really a matter of preference. I use a combination of different levels. </
   <tbody>
     <tr>
       <td>Fill Sub Category Times</td>
-      <td>Fill in B3 onwards with the times for events in the sub-categories above</td>
+      <td>Fill in B3 onwards with the times for events in the categories above</td>
     </tr>
     <tr>
       <td>Fill Super Category Times</td>
-      <td>Fill in C8 onwards with the time assigned to their corresponding sub-calendars</td>
+      <td>Fill in C8 onwards with the time assigned to their corresponding calendars</td>
     </tr>
     <tr>
       <td>Fill Colors</td>
-      <td>Color in the sub-calendar rows according to the colors written in A8 onwards</td>
+      <td>Color in the calendar rows according to the colors written in A8 onwards</td>
     </tr>
   </tbody>
 </table>
@@ -340,7 +340,7 @@ Start by creating events for all of your fixed responsibilities. (You may not ha
 <p><img class="regular materialboxed responsive-img" src="/files/time_management/calendar_fixed_intitial.png" /></p>
 
 <p><strong>Daily activities</strong><br />
-Now, there are certain activities that you must do every day such as going to sleep, eating breakfast, eating dinner, etc. Place times for all of these events. Be sure to do this for your weekends as well. I place them in my “Misc.” sub-calendar. </p>
+Now, there are certain activities that you must do every day such as going to sleep, eating breakfast, eating dinner, etc. Place times for all of these events. Be sure to do this for your weekends as well. I place them in my “Misc.” calendar. </p>
 
 <p><img class="regular materialboxed responsive-img" src="/files/time_management/calendar_with_initial_plans.png" /></p>
 
@@ -387,10 +387,10 @@ This next part is a bit tricky. We want to create assignable time blocks. This m
 
 <p><img class="regular materialboxed responsive-img" src="/files/time_management/calendar_initial_fill.png" /></p>
 
-<p>This is by no means the final base. We now have an idea of how much time we have to distribute across different sub-categories of tasks/duties/responsibilities.</p>
+<p>This is by no means the final base. We now have an idea of how much time we have to distribute across different categories of tasks/duties/responsibilities.</p>
 
-<p><strong>Redistributing time into super-categories</strong><br />
-Using the spreadsheet, we can calculate the number of hours assigned to each sub-calendar for a designated period of time.</p>
+<p><strong>Redistributing time into calendars</strong><br />
+Using the spreadsheet, we can calculate the number of hours assigned to each calendar for a designated period of time.</p>
 
 <p><img class="regular materialboxed responsive-img" src="/files/time_management/spreadsheet_initial_calculation.png" /></p>
 
@@ -522,7 +522,7 @@ The first thing that I fill are the appointments errands that I feel that I must
   </tr>
 </table>
 
-<p>To help keep track of how many hours I have left, I make a cell calculate the difference between the sum of delegated times (time for active super-categories) and the sum of assigned times (time for sub-categories).</p>
+<p>To help keep track of how many hours I have left, I make a cell calculate the difference between the sum of delegated times (time for active calendars) and the sum of assigned times (time for categories).</p>
 
 <p>Since I won’t go to the gym on either tuesday or thursday, I thought those were optimal days to do errands that involved my car (getting car detailed and DMV). Had I chosen these errands for days I go to the gym, I would lose time to commuting between the gym and my house.</p>
 
