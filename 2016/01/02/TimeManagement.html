@@ -59,33 +59,65 @@
 January 02, 2016 by <a rel="author" href="https://plus.google.com/u/0/+WilkaCarvalhotheSocialLoner"> Wilka Carvalho </a>
 
 <p>A guide to my structured, yet flexible, time management system. I also provide a script that populates a spreadsheet with data from one’s google calendar. Recommended for people, like myself, with a scattered mind.
-<br /><br /></p>
+<br /></p>
 
-<h4 id="table-of-contents">Table of Contents</h4>
+<hr />
+
+<h4 id="too-long-didnt-read-tldr">Too Long; Didn’t Read (TL;DR)</h4>
+
+<ol>
+  <li>Download <a href="https://docs.google.com/spreadsheets/d/1ELRQ8M8bjhPlvydnJxGaMsTuwaKN6YKjQJLUZ3zmKFs/pub?output=xlsx">this excel file</a>, upload it into Google Sheets, and add <a href="/files/time_management/time_tracker.js">this script</a> to it.</li>
+  <li>Place the name of calendars you want to track vertically beginning at B8.</li>
+  <li>If you want a calendar’s events to be used for tracking time assignment to category, place text to the left of the calendar name (any text satisfies this).</li>
+  <li>Place the name of categories you want to track horizantally beginning at B2.</li>
+  <li>An event will contribute to a category’s time if the category is in its title.</li>
+  <li>Put the start date and end date across cells E7-H7 and E8-H8, respectively, in the format (date, month, year).</li>
+  <li>Track your time using the Time Tracker menu which should appear as soon as you save the script.</li>
+</ol>
+
+<p>In the above below, time delegation for sub-categories “570,” “561,” “ml,” and “apps” would only be tracked using sub-calendars “Work,” “Extra,” and “Personal.”</p>
+
+<table>
+  <tr>
+    <td>
+      <img class="regular materialboxed responsive-img" src="/files/time_management/calendar_final_base.png" />
+    </td>
+    <td>
+      <img class="regular materialboxed responsive-img" src="/files/time_management/spreadsheet_calendar_fill.png" />
+    </td>
+  </tr>
+</table>
+
+<hr />
+<p><br /></p>
+
+<h3 id="full-overview">Full Overview</h3>
+
+<h5 id="table-of-contents">Table of Contents</h5>
 
 <table>
   <tbody>
     <tr>
-      <td><a href="/2016/01/02/TimeManagement.html#what-do-you-need">Requirements</a></td>
+      <td><a href="/2016/01/02/TimeManagement.html#what-do-you-need">What do you need</a></td>
     </tr>
     <tr>
-      <td><a href="/2016/01/02/TimeManagement.html#setting-up-your-spreadsheet">Setting up Spreadsheet</a></td>
+      <td><a href="/2016/01/02/TimeManagement.html#setting-up-your-spreadsheet">Setting up your spreadsheet</a></td>
     </tr>
     <tr>
-      <td><a href="/2016/01/02/TimeManagement.html#setting-up-your-calendar-base">Setting up Sub-Calendars</a></td>
+      <td><a href="/2016/01/02/TimeManagement.html#setting-up-your-calendar-base">Setting up your calendar base</a></td>
     </tr>
     <tr>
-      <td><a href="/2016/01/02/TimeManagement.html#delegating-tasks-to-times">Filling in Sub-Calendars with tasks</a></td>
+      <td><a href="/2016/01/02/TimeManagement.html#delegating-tasks-to-times">Delegating tasks to times</a></td>
     </tr>
     <tr>
-      <td><a href="/2016/01/02/TimeManagement.html#adjusting-your-calendar-throughout-the-week">Adjusting Sub-Calendar task delegation</a></td>
+      <td><a href="/2016/01/02/TimeManagement.html#adjusting-your-calendar-throughout-the-week">Adjusting your calendar throughout the week</a></td>
     </tr>
   </tbody>
 </table>
 
 <hr />
 
-<p>This is my system for managing time. I use consistent calendar event names to assign times for tasks and track time assignment with a spreadsheet. To expedite this process, I use a script to interface between my calendar and spreadsheet. In theory, this can be used to compliment any task management system but I will present the skeleton of mine here.</p>
+<p>This is my system for managing time: I use consistent calendar event names to assign times for tasks and track time assignment with a spreadsheet. To expedite this process, I use a script to interface between my calendar and spreadsheet. In theory, this can be used to complement any task management system but I will present the skeleton of mine here.</p>
 
 <p>The basic premise is that a script populates a spreadsheet with the number of hours you have assigned to different categories of tasks.</p>
 
@@ -101,13 +133,25 @@ January 02, 2016 by <a rel="author" href="https://plus.google.com/u/0/+WilkaCarv
 
 <p>This system has two essential pieces: a calendar and a spreadsheet.</p>
 
+<!-- <table>
+  <tr>
+    <td>
+      <img class="regular materialboxed responsive-img" src="/files/time_management/calendar_base_demo.png">
+    </td>
+    <td>
+      <img class="regular materialboxed responsive-img" src="/files/time_management/spreadsheet_layout.png">
+    </td>
+  </tr>
+</table>
+ -->
+
 <table>
   <tr>
     <td>
-      <img class="regular materialboxed responsive-img" src="/files/time_management/calendar_base_demo.png" />
+      <img class="regular materialboxed responsive-img" src="/files/time_management/calendar_final_base.png" />
     </td>
     <td>
-      <img class="regular materialboxed responsive-img" src="/files/time_management/spreadsheet_layout.png" />
+      <img class="regular materialboxed responsive-img" src="/files/time_management/spreadsheet_calendar_fill.png" />
     </td>
   </tr>
 </table>
@@ -253,11 +297,11 @@ It is really a matter of preference. I use a combination of different levels. </
 
 <p>To the left of your super-categories, you can put the color you intend for the row. This field accepts written colors and hexadecimal colors.</p>
 
-<p>The time for sub-categories is only populated using sub-calendars that have text written in their corresponding color cell. Writing a color for the sub-calendar’s row satisfies this requirement. You can think of these super-categories as being “active”.</p>
+<p>The time for sub-categories is only populated using sub-calendars that have text written in their corresponding color cell. Writing anything satisfies this requirement. You can think of these super-categories as being “active”.</p>
 
 <p><img class="regular materialboxed responsive-img" src="/files/time_management/spreadsheet_initial_fill.png" /></p>
 
-<p>In the above example, time delegation for sub-categories “570,” “561,” “ml,” and “apps” would only be tracked using sub-calendars “Work,” “Assignable,” and “Personal.”</p>
+<p>In the above example, time delegation for sub-categories “570,” “561,” “ml,” and “apps” would only be tracked using sub-calendars “Work,” “Extra,” and “Personal.”</p>
 
 <p>Now that you’ve filled in the spreadsheet, I will quickly cover how to use the script. Your spreadsheet should now have a “Time Tracker” menu. Below I describe each option.</p>
 
@@ -300,7 +344,7 @@ Now, there are certain activities that you must do every day such as going to sl
 
 <p><img class="regular materialboxed responsive-img" src="/files/time_management/calendar_with_initial_plans.png" /></p>
 
-<ul class="collapsible" data-collapsible="accordian">
+<ul class="collapsible" data-collapsible="expandable">
   <li>
     <div class="header collapsible-header center"> A note on sleep </div>
     <div class="body collapsible-body">
@@ -315,7 +359,7 @@ Now, there are certain activities that you must do every day such as going to sl
 
 <p>As you create the template for your schedule, it is important that you are honest with yourself about your habits and tendencies. This will help to ensure that you follow the schedule you create.</p>
 
-<ul class="collapsible" data-collapsible="accordian">
+<ul class="collapsible" data-collapsible="expandable">
   <li>
     <div class="header collapsible-header center"> 
     A note on being honest with yourself
@@ -339,7 +383,7 @@ This next part is a bit tricky. We want to create assignable time blocks. This m
 
 <p>I try to create time blocks that are under 3 hrs and within 10 minutes of the closest 30-minute mark, e.g 20 minutes, 50 minutes, 1 hour, 20 minutes, etc. Time blocks of this length allow for the 10 minute cushion between events I mentioned before. </p>
 
-<p>To begin, I fill my calendar with time blocks of the length mentioned above periodically seperated by 20 minute breaks as follows. </p>
+<p>To begin, I fill my calendar with time blocks of the length mentioned above periodically separated by 20 minute breaks as follows. </p>
 
 <p><img class="regular materialboxed responsive-img" src="/files/time_management/calendar_initial_fill.png" /></p>
 
@@ -375,7 +419,7 @@ Using the spreadsheet, we can calculate the number of hours assigned to each sub
 
 <p>(Note that I have an already set Dental appointment in my calendar where I typically have a “Work” block).</p>
 
-<ul class="collapsible" data-collapsible="accordian">
+<ul class="collapsible" data-collapsible="expandable">
   <li>
     <div class="header collapsible-header center"> 
     Logic to my distribution
@@ -417,7 +461,7 @@ Using the spreadsheet, we can calculate the number of hours assigned to each sub
 
 <p>You’ll see that I make a mini-column for every category of tasks I need to complete. I approximate the amount of time I’ll need for each task and sum this time for each category.</p>
 
-<p>If you having trouble with this, you may find this <a href="https://hackmake.org/reference/gtd-trigger-list">trigger list</a> helpful. If some items in the list are especially helpful, I recommend you write them down for future reference.</p>
+<p>If you having trouble with this, you may find this <a href="http://wiki.43folders.com/index.php/Trigger_List">trigger list</a> helpful. If some items in the list are especially helpful, I recommend you write them down for future reference.</p>
 
 <p>If you’re unsure about how much time to give a task, a common rule-of-thumb is to make an estimate and multiply it by 3. As you continue to track your time, your predictions will become more accurate.</p>
 
@@ -441,7 +485,7 @@ Using the spreadsheet, we can calculate the number of hours assigned to each sub
 
 <p>If you don’t put a start date, the spreadsheet will begin tracking time from the current time. If you don’t put an end date, the spreadsheet will track until midnight of the following Saturday (my own default).</p>
 
-<ul class="collapsible" data-collapsible="accordian">
+<ul class="collapsible" data-collapsible="expandable">
   <li>
     <div class="header collapsible-header center"> 
     Why I start planning my week from Saturday
@@ -534,40 +578,115 @@ The first thing that I fill are the appointments errands that I feel that I must
 
 <p>I needed about 4 hours for looking into sorting algorithms so I put that immediately after the gym on Wednesday. Afterwards I placed a break and some simple tasks to rest my brain. I assigned the rest of the day to going over proofs.</p>
 
-<p>I like to divide tasks that give me difficulty accross multiple days. I find that when I re-continue the task, it is far easier for me. With this in mind, I seperated my time working on proofs across Wednesday night and Friday morning.</p>
+<p>I like to divide tasks that give me difficulty accross multiple days. I find that when I re-continue the task, it is far easier for me. With this in mind, I separated my time working on proofs across Wednesday night and Friday morning.</p>
 
 <p>I left the end of my day on Friday to work on general 570 tasks.</p>
 
 <h5 id="adjusting-your-calendar-throughout-the-week">Adjusting your calendar throughout the week</h5>
 
-<p><strong>Sunday</strong><br /></p>
+<p>You will likely adjust your calendar throughout the week. Once you’ve acclimated to this system, adjustments will likely only be from impromptu meetings and events (meeting with professor, dental appointment, spontaneity with friends, etc.). However, until you acclimate, you will likely adjust your calendar because of your own inability to follow your schedule.</p>
 
-<p><img class="regular materialboxed responsive-img" src="/files/time_management/ex_calendar_adjusted_1.png" /></p>
+<h5><b>This is fine.</b></h5>
 
-<p>I realized that I needed to set time for the following:<br />
+<p>Even I, who has been following this system for some time now, need time to acclimate to following a set schedule.</p>
+
+<p>Below, I recount my failures to uphold my schedule the first week. I hope this both shows you that divergence from your schedule is fine in the beginning, and gives you ideas on how to compensate for this. Remember to learn from your “mistakes.”</p>
+
+<ul class="collapsible" data-collapsible="expandable">
+<li>
+  <div class="header collapsible-header active center"> 
+Sunday
+  </div>
+  <div class="body collapsible-body">
+    <p>
+
+I realized that I needed to set time for the following:<br />
 1. Buying a few groceries - 10 min (1 time)  <br />
-2. Cleaning my room - 30 min (1 time) <br />
 3. Cooking Dinner - 30 min (x2 weekly) <br />
-4. Eating Dinner - 30 min (~daily)</p>
+4. Eating Dinner - 30 min (~daily)
+<br /><br />
+(DUH to that last 2!)
+<br /><br />
+I decided to set times to cook on Sunday and Wednesday, making dinner that would last about 3 days (inclusive). I set 20 minutes after dinner for eating it on Sunday and Wednesday. For the other days, I set 20 minutes for dinner followed by a break incase I wanted to lounge around for a bit before getting back to work.
+<br /><br />
+I woke up fairly late so I shifted my task summarizing ANNs to a later time and removed my task doing a tutorial. I gave that task more time than planned originally, so this was fine. 
 
-<p>(DUH to that last 2!)</p>
+    </p>
+  </div>
+</li>
+<li>
+  <div class="header collapsible-header center"> 
+Monday
+  </div>
+  <div class="body collapsible-body">
+    <p>
 
-<p>I decided to set times to cook on Sunday and Wednesday, making dinner that would last about 3 days (inclusive). I set 20 minutes after dinner for eating it on Sunday and Wednesday. For the other days, I set 20 minutes for dinner followed by a break incase I wanted to lounge around for a bit before getting back to work.</p>
+My meeting with Sanjay went longer than I expected. I accounted for this in my calendar and found that I didn't have enough time for my "Personal" task. It wasn't urgent so I moved it the following Weekend to be rescheduled that Friday. 
+<br /><br />
+That night, I stopped working around 9 and proceeded to lounge around for about 2 hours after which I felt a compulsion to clean my room and clean up part of the kitchen. I went to bed around 2:30am.
+    </p>
+  </div>
+</li>
+<li>
+  <div class="header collapsible-header center"> 
+Tuesday
+  </div>
+  <div class="body collapsible-body">
+    <p>
 
-<p>I woke up fairly late so I shifted my task summarizing ANNs to a later time and removed my task doing a tutorial. I gave that task more time than planned originally, so this was fine. </p>
+Having gone to bed late, I shortened the times for my tasks to accomodate for my lost time. I woke up in a pretty lackadazical mood so it took my about an hour before I started my day.
 
-<p><strong>Monday</strong><br /></p>
+That night, I ended up working and proceeding to do "Nada" longer than expected.
 
-<p><img class="regular materialboxed responsive-img" src="/files/time_management/ex_calendar_adjusted_2.png" /></p>
+    </p>
+  </div>
+</li>
+<li>
+  <div class="header collapsible-header center"> 
+  Wednesday
+  </div>
+  <div class="body collapsible-body">
+    <p>
+I slept in late. At the gym, I realized that my excericise took longer than expected. 
 
-<p>My meeting with Sanjay went longer than I expected. I accounted for this in my calendar and found that I didn’t have enough time for my “Personal” task. It wasn’t urgent so I moved it the following Weekend to be rescheduled that Friday. </p>
+The office for my errand was closed so I walked around aimlessly for a bit before getting to work.
 
-<!-- **Monday**<br>
+When I got home, I took a long dinner break and got bac to work around 7.
 
-<img class="regular materialboxed responsive-img" src="/files/time_management/ex_calendar_adjusted_2.png">
+    </p>
+  </div>
+</li>
+<li>
+  <div class="header collapsible-header center"> 
+  Thursday
+  </div>
+  <div class="body collapsible-body">
+    <p>
 
-I went to bed late and shortened the times for my tasks to accomodate for my lost time. 
- -->
+    </p>
+  </div>
+</li>
+<li>
+  <div class="header collapsible-header center"> 
+  Friday
+  </div>
+  <div class="body collapsible-body">
+    <p>
+
+    </p>
+  </div>
+</li>
+</ul>
+
+<!-- <img class="regular materialboxed responsive-img" src="/files/time_management/ex_calendar_adjusted_1.png"> -->
+
+<!-- **Monday**<br> -->
+
+<!-- <img class="regular materialboxed responsive-img" src="/files/time_management/ex_calendar_adjusted_2.png"> -->
+
+<!-- **Tuesday**<br> -->
+
+<!-- <img class="regular materialboxed responsive-img" src="/files/time_management/ex_calendar_adjusted_2.png"> -->
 
 <hr />
 
@@ -663,7 +782,7 @@ s.setAttribute('data-timestamp', +new Date());
 
   $(".button-collapse").sideNav();
   $(document).ready(function(){
-    $('.collapsible').collapsible({ accordion : true });
+    $('.collapsible').collapsible({ accordion : false });
   });
    $(document).ready(function(){
     $('.materialboxed').materialbox();

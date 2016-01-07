@@ -27,3 +27,6 @@
   padding-bottom: 3%;
 */}
 
+.inline-collapse{
+    display: inline-block;
+}
