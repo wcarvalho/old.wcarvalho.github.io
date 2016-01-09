@@ -1,0 +1,188 @@
+<html>
+
+<head>
+  <title>Time Tracker System - </title>
+  
+  <meta name="description" content="I present an overview of how to use the script in my post, "A Prescription for Managing and Tracking Your Time," to track time delegation in Google Calendar using a Google spreadsheet">
+
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link type="text/css" rel="stylesheet" href="/css/styles.css"/>
+  <link type="text/css" rel="stylesheet" href="/css/materialize.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="/css/blog_post.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link rel="author" href="https://plus.google.com/u/0/+WilkaCarvalhotheSocialLoner"/>
+
+</head>
+<body>
+<div class="intro deep-purple lighten-1 z-depth-1">
+  <h1 class="grey-text text-lighten-5">
+    Wilka Torrico de Carvalho
+  </h1>
+  <h5 class="grey lighten-4 grey-text text-darken-1">
+  Aspiring
+  <span class="red-text text-accent-4"> Brain Scientist</span>
+  and
+  <span class="indigo-text text-accent-4">Software Engineer</span>
+  </h5>
+
+  <div>
+    <img src="/img/brain-icon.png">
+  </div>
+</div>
+<nav> 
+  <div class="menu nav-wrapper grey darken-3 z-depth-1">
+  <div class="text">
+    
+  </div>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/bio.html">Bio</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/files/wilka_carvalho_CV.pdf">CV</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/bio.html">Bio</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/files/wilka_carvalho_CV.pdf">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+<div class="col s12 m4 l4">
+<div class="default card">
+
+<h3> Time Tracker System </h3>
+January 08, 2016 by <a rel="author" href="https://plus.google.com/u/0/+WilkaCarvalhotheSocialLoner"> Wilka Carvalho </a>
+
+<p>I present an overview of how to use the script in my post, “A Prescription for Managing and Tracking Your Time,” to track time delegation in Google Calendar using a Google spreadsheet</p>
+
+<ol>
+  <li>
+    <p>Download <a href="https://docs.google.com/spreadsheets/d/1ELRQ8M8bjhPlvydnJxGaMsTuwaKN6YKjQJLUZ3zmKFs/pub?output=xlsx">this excel file</a>, <a href="https://docs.google.com/spreadsheets/u/0/">upload it</a> into Google Sheets, and add <a href="/files/time_management/time_tracker.js">this script</a> to it.</p>
+
+    <p>Open “Tools -&gt; Script Editor…“<br />
+ Paste the contents of the script inside and save.</p>
+  </li>
+  <li>Place the name of calendars you want to track vertically beginning at B8.</li>
+  <li>If you want a calendar’s events to be used for tracking time assignment to a category, place text to the left of the calendar name (any text satisfies this).</li>
+  <li>Place the name of categories you want to track horizantally beginning at B2.</li>
+  <li>An event will contribute to a category’s time if the category is somewhere in the event’s title.</li>
+  <li>Put the start date and end date across cells E7-H7 and E8-H8, respectively, in the format (date, month, year).</li>
+  <li>Track your time using the Time Tracker menu which should appear as soon as you save the script.</li>
+</ol>
+
+<p><b>Example:</b></p>
+<table>
+  <tr>
+    <td>
+      <img class="regular materialboxed responsive-img" src="/files/time_management/ex_calendar_final_postweek.png" />
+    </td>
+    <td>
+      <img class="regular materialboxed responsive-img" src="/files/time_management/ex_spreadsheet_final_postweek.png" />
+    </td>
+  </tr>
+</table>
+
+<p><b> Calendar:  </b> The calendar names are on the right side, while the category names are used in the event titles.<br />
+<b> Spreadsheet: </b> Time delegation for categories “570,” “561,” “research,” and “other” was only tracked using calendars “Work,” “Extra,” and “Personal.”</p>
+
+
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+
+var disqus_config = function () {
+var disqus_identifier = /2016/01/08/TimeManagementSystem.html;
+var disqus_url = /2016/01/08/TimeManagementSystem.html;
+this.page.url = /2016/01/08/TimeManagementSystem.html; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = /2016/01/08/TimeManagementSystem.html; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//wilkacarvalho.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+</div>
+
+<footer class="page-footer">
+  <div class="container footer grey darken-3 z-depth-1">
+    <!-- <div class="row"> -->
+    <table><tr>
+    <td>
+      <div class="col l4 s12">
+        <div class="center">
+          <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/wilkacarvalho">
+            <img class="responsive-img" src="/img/linkedin.svg">
+          </a>
+        </div>
+        <div class="center">
+          <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/wilkacarvalho">LinkedIn</a>
+        </div>
+      </div>
+      </td>
+      <td>
+      <div class="col l4 s12">
+        <div class="center">
+          <a class="grey-text text-lighten-3" href="https://github.com/wcarvalho">
+            <img class="responsive-img" src="/img/github.svg">
+          </a>
+        </div>
+        <div class="center">
+          <a class="grey-text text-lighten-3" href="https://github.com/wcarvalho">GitHub</a>
+        </div>
+      </div>
+      </td>
+      <td>
+      <div class="col l4 s12">
+        <div class="center">
+          <a class="grey-text text-lighten-3" href="https://www.quora.com/Wilka-Carvalho">
+            <img class="responsive-img" src="/img/quora.svg">
+          </a>
+        </div>
+        <div class="center">
+          <a class="grey-text text-lighten-3" href="https://www.quora.com/Wilka-Carvalho">Quora</a>
+        </div>
+      </div>
+      </td>
+    </tr></table>
+    <!-- </div> -->
+  </div>
+  <div class="footer-copyright deep-purple lighten-1 z-depth-1">
+    <small>&copy; 2015 By Wilka Carvalho </small>
+  </div>
+</footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="/js/materialize.js"></script>
+<script type="text/javascript">
+  
+  var loc = window.location.pathname;
+  var dir = loc.substring(0, loc.lastIndexOf('/'));
+
+
+  $(".button-collapse").sideNav();
+  $(document).ready(function(){
+    $('.collapsible').collapsible({ accordion : false });
+  });
+   $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+        
+</script>
+</body>
+</html>
+  

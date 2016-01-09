@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>A System for Managing and Tracking Your Time - </title>
+  <title>A Prescription for Managing and Tracking Your Time - </title>
   
   <meta name="description" content="A guide to my structured, yet flexible, time management system. I also provide a script that populates a spreadsheet with data from one's google calendar. Recommended for people, like myself, with a scattered mind.">
 
@@ -55,41 +55,11 @@
 <div class="col s12 m4 l4">
 <div class="default card">
 
-<h3> A System for Managing and Tracking Your Time </h3>
+<h3> A Prescription for Managing and Tracking Your Time </h3>
 January 02, 2016 by <a rel="author" href="https://plus.google.com/u/0/+WilkaCarvalhotheSocialLoner"> Wilka Carvalho </a>
 
 <p>A guide to my structured, yet flexible, time management system. I also provide a script that populates a spreadsheet with data from one’s google calendar. Recommended for people, like myself, with a scattered mind.
 <br /></p>
-
-<hr />
-
-<h4 id="too-long-didnt-read-tldr">Too Long; Didn’t Read (TL;DR)</h4>
-
-<ol>
-  <li>Download <a href="https://docs.google.com/spreadsheets/d/1ELRQ8M8bjhPlvydnJxGaMsTuwaKN6YKjQJLUZ3zmKFs/pub?output=xlsx">this excel file</a>, upload it into Google Sheets, and add <a href="/files/time_management/time_tracker.js">this script</a> to it.</li>
-  <li>Place the name of calendars you want to track vertically beginning at B8.</li>
-  <li>If you want a calendar’s events to be used for tracking time assignment to a category, place text to the left of the calendar name (any text satisfies this).</li>
-  <li>Place the name of categories you want to track horizantally beginning at B2.</li>
-  <li>An event will contribute to a category’s time if the category is somewhere in the event’s title.</li>
-  <li>Put the start date and end date across cells E7-H7 and E8-H8, respectively, in the format (date, month, year).</li>
-  <li>Track your time using the Time Tracker menu which should appear as soon as you save the script.</li>
-</ol>
-
-<p>In the example below, time delegation for categories “570,” “561,” “ml,” and “apps” would only be tracked using calendars “Work,” “Extra,” and “Personal.”</p>
-
-<table>
-  <tr>
-    <td>
-      <img class="regular materialboxed responsive-img" src="/files/time_management/calendar_final_base.png" />
-    </td>
-    <td>
-      <img class="regular materialboxed responsive-img" src="/files/time_management/spreadsheet_calendar_fill.png" />
-    </td>
-  </tr>
-</table>
-
-<hr />
-<p><br /></p>
 
 <h3 id="full-overview">Full Overview</h3>
 
@@ -97,6 +67,9 @@ January 02, 2016 by <a rel="author" href="https://plus.google.com/u/0/+WilkaCarv
 
 <table>
   <tbody>
+    <tr>
+      <td><a href="/2016/01/02/TimeManagement.html#too-long-didnt-read">Too long; Didn’t Read</a></td>
+    </tr>
     <tr>
       <td><a href="/2016/01/02/TimeManagement.html#what-do-you-need">What do you need</a></td>
     </tr>
@@ -117,6 +90,43 @@ January 02, 2016 by <a rel="author" href="https://plus.google.com/u/0/+WilkaCarv
 
 <hr />
 
+<h4 id="too-long-didnt-read">Too Long; Didn’t Read</h4>
+
+<ol>
+  <li>
+    <p>Download <a href="https://docs.google.com/spreadsheets/d/1ELRQ8M8bjhPlvydnJxGaMsTuwaKN6YKjQJLUZ3zmKFs/pub?output=xlsx">this excel file</a>, <a href="https://docs.google.com/spreadsheets/u/0/">upload it</a> into Google Sheets, and add <a href="/files/time_management/time_tracker.js">this script</a> to it.</p>
+
+    <p>Open “Tools -&gt; Script Editor…“<br />
+ Paste the contents of the script inside and save.</p>
+  </li>
+  <li>Place the name of calendars you want to track vertically beginning at B8.</li>
+  <li>If you want a calendar’s events to be used for tracking time assignment to a category, place text to the left of the calendar name (any text satisfies this).</li>
+  <li>Place the name of categories you want to track horizantally beginning at B2.</li>
+  <li>An event will contribute to a category’s time if the category is somewhere in the event’s title.</li>
+  <li>Put the start date and end date across cells E7-H7 and E8-H8, respectively, in the format (date, month, year).</li>
+  <li>Track your time using the Time Tracker menu which should appear as soon as you save the script.</li>
+</ol>
+
+<p><b>Example:</b></p>
+<table>
+  <tr>
+    <td>
+      <img class="regular materialboxed responsive-img" src="/files/time_management/ex_calendar_final_postweek.png" />
+    </td>
+    <td>
+      <img class="regular materialboxed responsive-img" src="/files/time_management/ex_spreadsheet_final_postweek.png" />
+    </td>
+  </tr>
+</table>
+
+<p><b> Calendar:  </b> The calendar names are on the right side, while the category names are used in the event titles.<br />
+<b> Spreadsheet: </b> Time delegation for categories “570,” “561,” “research,” and “other” was only tracked using calendars “Work,” “Extra,” and “Personal.”</p>
+
+<h5 id="for-details-on-how-i-use-this-system-continue-reading">For details on how I use this system, continue reading.</h5>
+
+<hr />
+<p><br /></p>
+
 <p>This is my system for managing time: I use consistent calendar event names to assign times for tasks and track time assignment with a spreadsheet. To expedite this process, I use a script to interface between my calendar and spreadsheet. In theory, this can be used to complement any task management system but I will present the skeleton of mine here.</p>
 
 <p>The basic premise is that a script populates a spreadsheet with the number of hours you have assigned to different categories of tasks.</p>
@@ -125,7 +135,7 @@ January 02, 2016 by <a rel="author" href="https://plus.google.com/u/0/+WilkaCarv
 
 <p>Additionally, planning with all tasks/duties in mind ensures that I have enough time to complete everything I intend to. Later in the week, when I need to reschedule events, I can do so knowing how tasks and duties are generally distributed throughout the week.</p>
 
-<p>At first, the calendar may seem daunting. While set up can be a bit time-consuming, maintanence takes approximately 1 hr per week and adjustments are quick and painless.</p>
+<p>At first, the calendar may seem daunting. While set up can be a bit time-consuming, maintenance takes approximately 1 hr per week and adjustments are quick and painless.</p>
 
 <h4 id="setting-up">Setting up</h4>
 
@@ -156,10 +166,10 @@ January 02, 2016 by <a rel="author" href="https://plus.google.com/u/0/+WilkaCarv
   </tr>
 </table>
 
-<p>For the calendar and spreadsheet applications, I recommend using Google’s (<a href="https://www.google.com/calendar/about/">Google Calendar</a>, <a href="https://www.google.com/sheets/about/">Google Sheets</a>) because you can interface with them via <a href="https://developers.google.com/apps-script/?hl=en">Apps Scripts</a>. (App Scripts are JavaScript scripts which can access information in your google applications). Additionally, Google Calendar is stored online and is thus accessible from any platform. To organize your tasks, you will need something to list them – paper should be fine. </p>
+<p>For the calendar and spreadsheet applications, this relies on <a href="https://www.google.com/calendar/about/">Google Calendar</a> and <a href="https://www.google.com/sheets/about/">Google Sheets</a> because you can interface with them via <a href="https://developers.google.com/apps-script/?hl=en">Apps Scripts</a>. (App Scripts are JavaScript scripts which can access information in your google applications). Additionally, Google Calendar is stored online and is thus accessible from any platform. To organize your tasks, you will need something to list them – paper should be fine. </p>
 
 <p>In order to track my time delegation to tasks in different categories, I <br />
-(1) use multiple calendars and <br />
+(1) use multiple calendars depending on broad categories and <br />
 (2) implant category membership information into event names. <br />
 For example, I delegate time for research using my “Work” calendar. Labels for time working on my project modeling a DIRC particle detector always contained “dirc”. (This consistent naming is especially important in having an App Script automatically populate a spreadsheet with your time delegation).</p>
 
@@ -167,14 +177,14 @@ For example, I delegate time for research using my “Work” calendar. Labels f
 
 <h5 id="calendars">Calendars</h5>
 
-<p>I create calendars based on the type of tasks/duties I expect to have. For example, I know that I will have some responsibilities which will require a consistent block of time every week so I have a “Fixed” super-category; I know that outside of my schoolwork and research, I enjoy pursuing side-projects so I have a “Personal” super-category. </p>
+<p>I create calendars based on the type of tasks/duties I expect to have. For example, I know that I will have some responsibilities which will require a consistent block of time every week so I have a “Fixed” calendar; I know that outside of my schoolwork and research, I enjoy pursuing side-projects so I have a “Personal” calendar. </p>
 
-<p>You can find a full list of my current calendars below. Please do not restrict yourself to these. Take a moment to reflect and create calendars which you feel describe how you delienate your tasks. While you can always update them in the future, a list which accurately reflects your task delienation will ease task delegation. </p>
+<p>You can find a full list of my current calendars below. Please do not restrict yourself to these. Take a moment to reflect and create calendars which you feel describe how you delineate your tasks. While you can always update them in the future, a list which accurately reflects your task delineation will ease task delegation. </p>
 
 <table>
   <thead>
     <tr>
-      <th>Super-Category</th>
+      <th>Calendar</th>
       <th>Purpose</th>
       <th>Example</th>
     </tr>
@@ -198,7 +208,7 @@ For example, I delegate time for research using my “Work” calendar. Labels f
     <tr>
       <td>Extra</td>
       <td>time for small tasks</td>
-      <td>- send emails <br /> - call people</td>
+      <td>- send emails <br /> - call people <br /> - install software</td>
     </tr>
     <tr>
       <td>Errands</td>
@@ -223,7 +233,7 @@ For example, I delegate time for research using my “Work” calendar. Labels f
   </tbody>
 </table>
 
-<p>(In theory, you can place all of your events into one calendar, but with many calendars, your events will be color coordinated, which is very useful for quickly parsing them.)</p>
+<p>(In theory, you can place all of your events into one calendar, but with many calendars, your events will be color coordinated, which is useful for quickly parsing your calendar.)</p>
 
 <hr />
 <p><br /></p>
@@ -238,7 +248,7 @@ It is really a matter of preference. I use a combination of different levels. </
 
 <p>For whatever level you choose, consider opting for shorter labels since you will have to write this label in the event title of every event that corresponds to this category.</p>
 
-<p>Your category choices are more amenable than your super-category choices. While your super-category choices may remain for months, you may add/remove categories on a weekly basis. </p>
+<p>Your category choices are more amenable than your calendar choices. While your calendar choices may remain for months, you may add/remove categories on a weekly basis. </p>
 
 <p>Below are categories I am currently using.</p>
 
@@ -263,12 +273,12 @@ It is really a matter of preference. I use a combination of different levels. </
       <td>robotics class</td>
     </tr>
     <tr>
-      <td>ml</td>
-      <td>machine learning research</td>
+      <td>research</td>
+      <td>research</td>
     </tr>
     <tr>
-      <td>fulbright</td>
-      <td>fulbright application</td>
+      <td>other</td>
+      <td>small tasks</td>
     </tr>
   </tbody>
 </table>
@@ -293,7 +303,7 @@ It is really a matter of preference. I use a combination of different levels. </
 
 <p>Replace the contents of the script that opens with the contents of the script in the file above. Save and the features are ready to use.</p>
 
-<p>Place your calendars vertically starting at B8 and your categories horizantally starting at B2.</p>
+<p>Place your calendars vertically starting at B8 and your categories horizontally starting at B2.</p>
 
 <p>To the left of your calendars, you can put the color you intend for the row. This field accepts written colors and hexadecimal colors.</p>
 
@@ -346,7 +356,10 @@ Now, there are certain activities that you must do every day such as going to sl
 
 <ul class="collapsible" data-collapsible="expandable">
   <li>
-    <div class="header collapsible-header center"> A note on sleep </div>
+    <div class="header collapsible-header center"> 
+    A note on sleep 
+    <i class="material-icons">play_for_work</i>
+    </div>
     <div class="body collapsible-body">
       <p> I personally only need 7+ hours of sleep to be productive and diligent throughout the day, yet I still assign 8 hours of sleep. I have been using a Fit Bit for some time now and have found that for however long I am in bed, I typically get apx. an hour less of sleep. <br /> <br />
       I tracked my productivity on days where I slept under and over 7 hours, and found that at least 7 hours was necessary to ensure that I was efficient, effective, and attentive while working. With less, I had trouble following discussions or derivations in class, I was more forgetful - I was generally a less capable learner and doer.
@@ -363,6 +376,7 @@ Now, there are certain activities that you must do every day such as going to sl
   <li>
     <div class="header collapsible-header center"> 
     A note on being honest with yourself
+    <i class="material-icons">play_for_work</i>
     </div>
     <div class="body collapsible-body">
       <p> 
@@ -396,7 +410,7 @@ Using the spreadsheet, we can calculate the number of hours assigned to each cal
 
 <p>51.75 hours to delegate.</p>
 
-<p>I assume that you do not want to dedicate all 51.75 of these hours to your official work. Maybe you play the saxaphone and would like to dedicate 6 hours a week to that, maybe you have a side business that requires 7 hours a week. Maybe you want to work a maximum of 40 hours and chill out the rest of the time.</p>
+<p>I assume that you do not want to dedicate all 51.75 of these hours to your official work. Maybe you play the saxophone and would like to dedicate 6 hours a week to that, maybe you have a side business that requires 7 hours a week. Maybe you want to work a maximum of 40 hours and chill out the rest of the time.</p>
 
 <p>This is where my “Personal”, “Extra”, and “Events” calendars come in. I dedicate ~7 hours to work in my “Personal” calendar and ~2.5 hours to work in my “Extra” calendar. I leave the end of my Saturdays (6pm onwards) to relaxing/hanging out with friends. </p>
 
@@ -421,6 +435,7 @@ Using the spreadsheet, we can calculate the number of hours assigned to each cal
   <li>
     <div class="header collapsible-header center"> 
     Logic to my distribution
+    <i class="material-icons">play_for_work</i>
     </div>
     <div class="body collapsible-body">
       <p> 
@@ -455,13 +470,13 @@ Using the spreadsheet, we can calculate the number of hours assigned to each cal
 <p>I have just come back from break and have not followed this schedule for the past couple of weeks (I was really chilling!). As such, I will likely face some of the same issues you will face your first time adopting this system. I hope that you find my approaches or solutions helpful in combating whatever issues you face.</p>
 
 <h5 id="preparing-a-list-of-tasks-to-delegate">Preparing a list of tasks to delegate</h5>
-<p>In addition to your calendar and spreadsheet, I recommend you assign your time from a task list. I list all of mine on a sheet of looseleaf.</p>
+<p>In addition to your calendar and spreadsheet, I recommend you assign your time from a task list. I list all of mine on a sheet of loose-leaf.</p>
 
 <p>You’ll see that I make a mini-column for every category of tasks I need to complete. I approximate the amount of time I’ll need for each task and sum this time for each category.</p>
 
 <p>If you having trouble with this, you may find this <a href="http://wiki.43folders.com/index.php/Trigger_List">trigger list</a> helpful. If some items in the list are especially helpful, I recommend you write them down for future reference.</p>
 
-<p>If you’re unsure about how much time to give a task, a common rule-of-thumb is to make an estimate and multiply it by 3. As you continue to track your time, your predictions will become more accurate.</p>
+<p>If you’re unsure about how much time to give a task, a common rule-of-thumb is to make an estimate and multiply it by 2 or 3. As you continue to track your time, your predictions will become more accurate.</p>
 
 <p>Here is my starting setup.</p>
 
@@ -487,6 +502,7 @@ Using the spreadsheet, we can calculate the number of hours assigned to each cal
   <li>
     <div class="header collapsible-header center"> 
     Why I start planning my week from Saturday
+    <i class="material-icons">play_for_work</i>
     </div>
     <div class="body collapsible-body">
       <p>
@@ -526,7 +542,7 @@ The first thing that I fill are the appointments errands that I feel that I must
 
 <p>Following this logic, chase and the post office are errands that require my car, so placing them after another car errand seemed optimal. </p>
 
-<p>When I go to the gym, I typically stay on campus, so I scheduled my last errand that involved going to an adminstration building after the gym.</p>
+<p>When I go to the gym, I typically stay on campus, so I scheduled my last errand that involved going to an administration building after the gym.</p>
 
 <p><strong>Second assignment</strong><br /></p>
 
@@ -548,13 +564,13 @@ The first thing that I fill are the appointments errands that I feel that I must
 
 <p>I think the conversation will go over more smoothly if I prepare in writing what parts of my project I think he might be interested in. </p>
 
-<p>Sanjay also has a project which I might collaborate with him on. Because I suspect that we will likely discuss theoretical and technical aspects of our projects, I thought it best to delegate many of my research tasks before I met him. By doing so, I hope to be better-equipped for our conversation. </p>
+<p>He also has a project which I might collaborate with him on. Because I suspect that we will likely discuss theoretical and technical aspects of our projects, I thought it best to delegate many of my research tasks before I met him. By doing so, I hope to be better-equipped for our conversation. </p>
 
 <p>I like to dedicate long sequences of blocks to lengthy tasks. I find that it takes me about an hour to “get in the zone.” Afterwards, I work more efficiently and effectively on the current task as my thoughts begin to revolve around it.</p>
 
 <p>I saw a long stretch of time-blocks on Wednesday. I thought this would be optimal for a long coding task I have for my research.</p>
 
-<p>You’ll notice that I predicted 14 hours to research but assigned 21. This is fine. As I continue assigning time, if I feel I need more time for other tasks, I can always readjust my time assignments. With my spreadhseet, I can easily track how much each category is over and under.</p>
+<p>You’ll notice that I predicted 14 hours to research but assigned 21. This is fine. As I continue assigning time, if I feel I need more time for other tasks, I can always readjust my time assignments. With my spreadsheet, I can easily track how much each category is over and under.</p>
 
 <p><strong>“Final” assignment</strong><br /></p>
 
@@ -576,7 +592,7 @@ The first thing that I fill are the appointments errands that I feel that I must
 
 <p>I needed about 4 hours for looking into sorting algorithms so I put that immediately after the gym on Wednesday. Afterwards I placed a break and some simple tasks to rest my brain. I assigned the rest of the day to going over proofs.</p>
 
-<p>I like to divide tasks that give me difficulty accross multiple days. I find that when I re-continue the task, it is far easier for me. With this in mind, I separated my time working on proofs across Wednesday night and Friday morning.</p>
+<p>I like to divide tasks that give me difficulty across multiple days. I find that when I re-continue the task, it is far easier for me. With this in mind, I separated my time working on proofs across Wednesday night and Friday morning.</p>
 
 <p>I left the end of my day on Friday to work on general 570 tasks.</p>
 
@@ -588,12 +604,15 @@ The first thing that I fill are the appointments errands that I feel that I must
 
 <p>Even I, who has been following this system for some time now, need time to acclimate to following a set schedule.</p>
 
-<p>Below, I recount my failures to uphold my schedule the first week. I hope this both shows you that divergence from your schedule is fine in the beginning, and gives you ideas on how to compensate for this. Remember to learn from your “mistakes.”</p>
+<p>Below, I recount my failures to uphold my schedule my first week. I hope this both shows you that divergence from your schedule is fine in the beginning, and gives you ideas on how to compensate for this. Remember to learn from your “mistakes.”</p>
+
+<p>(This is more of a story of my week than anything else.)</p>
 
 <ul class="collapsible" data-collapsible="expandable">
 <li>
   <div class="header collapsible-header active center"> 
 Sunday
+<i class="material-icons">play_for_work</i>
   </div>
   <div class="body collapsible-body">
     <p>
@@ -615,6 +634,7 @@ I woke up fairly late so I shifted my task summarizing ANNs to a later time and 
 <li>
   <div class="header collapsible-header center"> 
 Monday
+<i class="material-icons">play_for_work</i>
   </div>
   <div class="body collapsible-body">
     <p>
@@ -628,49 +648,58 @@ That night, I stopped working around 9 and proceeded to lounge around for about 
 <li>
   <div class="header collapsible-header center"> 
 Tuesday
+<i class="material-icons">play_for_work</i>
   </div>
   <div class="body collapsible-body">
     <p>
-
 Having gone to bed late, I shortened the times for my tasks to accomodate for my lost time. I woke up in a pretty lackadazical mood so it took my about an hour before I started my day.
-
-That night, I ended up working and proceeding to do "Nada" longer than expected.
-
+<br /><br />
+That night, I ended up working longer than expected and proceeding to do "Nada" longer than expected as well.
     </p>
   </div>
 </li>
 <li>
   <div class="header collapsible-header center"> 
   Wednesday
+  <i class="material-icons">play_for_work</i>
   </div>
   <div class="body collapsible-body">
     <p>
-I slept in late. At the gym, I realized that my excericise took longer than expected. 
-
+I slept in late. At the gym, I realized that my excericise took longer than expected. I will account for this in future weeks.
+<br /><br />
 The office for my errand was closed so I walked around aimlessly for a bit before getting to work.
-
-When I got home, I took a long dinner break and got bac to work around 7.
-
+<br /><br />
+When I got home, I took a long dinner break and got back to work around 7. I ended up working longer than expected and pushed back my bedtime.
     </p>
   </div>
 </li>
 <li>
   <div class="header collapsible-header center"> 
   Thursday
+  <i class="material-icons">play_for_work</i>
   </div>
   <div class="body collapsible-body">
     <p>
-
+I finished my errands long before planned so I took a nap to catch up on lost sleep. I realized that I would be driving to San Francisco soon so I went to the mechanic to get my car looked at and planned for the trip in place of my planned 570 work.
+<br /><br />
+I went out for dinner and got back to work late. I ended up working longer than expected again.
+<br /><br />
+Afterwards, I realized that I hadn't gone over my budget for a long time so I was up late working on this. I went to bed late, again.
     </p>
   </div>
 </li>
 <li>
   <div class="header collapsible-header center"> 
   Friday
+  <i class="material-icons">play_for_work</i>
   </div>
   <div class="body collapsible-body">
     <p>
-
+  Since, I woke up late and my gym exsercise takes longer than expected, I had less time for my 570 work than expected. I decided to push back my "Extra" work to the following week.
+  <br /><br />
+  I got tired around 5 and decided to take a break and buy groceries earlier in the day. 
+  <br /><br />
+  Not a great week, not a terrible week. What matters is that I keep improving every week!
     </p>
   </div>
 </li>

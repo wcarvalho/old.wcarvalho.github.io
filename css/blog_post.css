@@ -24,3 +24,8 @@ img.regular{
 img.regular.materialboxed.responsive-img.initialized.active {
     max-height: 1500px;
 }
+
+.container{
+
+    /*font-size: 1.2rem;*/
+}
