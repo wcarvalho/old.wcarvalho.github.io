@@ -29,3 +29,7 @@ img.regular.materialboxed.responsive-img.initialized.active {
 
     /*font-size: 1.2rem;*/
 }
+
+th{
+    text-align: center;
+}
