@@ -1,6 +1,5 @@
 letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 weekdays = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
-// var sheetURL = 'https://docs.google.com/a/usc.edu/spreadsheets/d/1_xsqOnC-RTIuFteeyssVHSZL17nn6zMQFAW2j-if1yo/edit?usp=sharing';
 var sheet = SpreadsheetApp.getActive();
 
 // Set User Menu
