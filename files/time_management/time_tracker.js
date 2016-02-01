@@ -5,10 +5,10 @@ var sheet = SpreadsheetApp.getActive();
 // Set User Menu
 function onOpen() {
   SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
-    .createMenu('Fill Time Data')
-    .addItem('Fill Sub Category Times', "fillSubCategoryTimes")
-    .addItem('Fill Super Category Times', "fillSubCalendarTimes")
-    .addItem('Fill Colors', "fillSubCalendarColors")
+    .createMenu('Time Tracker')
+    .addItem('Fill Category Times', "fillCategoryTimes")
+    .addItem('Fill Calendar Times', "fillCalendarTimes")
+    .addItem('Fill Calendar Row Colors', "fillCalendarRowColors")
     .addToUi();
 }
 
@@ -239,7 +239,7 @@ function getSubCategoryTimes(calendar, subCategoryTimes, subCategories, startDat
 /**
  * fills in the row at B3 with the time assigned to different subCategories
  */
-function fillSubCategoryTimes(){
+function fillCategoryTimes(){
   
   var startDate = getStartDate();
   var endDate = getEndDate();
@@ -342,7 +342,7 @@ function getSubCalendarTimes(subCalendarNames, startDate, endDate){
 /**
  * fills in the column starting at C8 with the number of hours delegated to different subCalendars
  */
-function fillSubCalendarTimes(){
+function fillCalendarTimes(){
 
   var startDate = getStartDate();
   var endDate = getEndDate();
@@ -364,7 +364,7 @@ function fillSubCalendarTimes(){
 /**
  * based on the colors given in the column at A8, A:C from 8 onwards is colored
  */
-function fillSubCalendarColors(){
+function fillCalendarRowColors(){
   var colors = getSubCalendarColors();
 
   var colStart = "A";
